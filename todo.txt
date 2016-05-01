@@ -1,0 +1,13 @@
+//===========
+// To Do
+//===========
+pass data into the hexmap component for initial rendering
+fill hexes with environmentType textures
+add units items and locations to data
+render units, items and locations
+create a nice big map
+use react dnd to move units to adjacent hexes
+
+
+
+add the ability to draw maps

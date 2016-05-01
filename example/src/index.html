@@ -1,14 +1,25 @@
 <!doctype html>
 <head>
 	<title>react-hexmap</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="example.css">
 	<link rel="stylesheet" href="hexmap.css">
+
+	<!--<script src="http://localhost:8000/snap.svg.js"></script>-->
 </head>
 <body>
 	<div class="container">
-
+		<svg width="60" height="60"
+			 xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<pattern id="skiffy" patternUnits="userSpaceOnUse" width="60" height="60">
+					<image xlink:href="http://localhost:8000/img/tiles/water.png" x="0" y="0" width="60" height="60" />
+				</pattern>
+			</defs>
+			<path d="M0,0 l0,60 l60,0 z" fill="url(#skiffy)" />
+		</svg>
 		<h1>react-hexmap</h1>
-
+		
 		<h2>
             <a href="https://github.com/Cortrah/react-hexmap">View project on GitHub</a>
         </h2>
@@ -20,11 +31,17 @@
 			<!-- put any hints about your component example here -->
 		</div>
 
+		<!--<script>-->
+			<!--var paper = Snap(100,100);-->
+			<!--var pattern = paper.image("tiles/water.png",0,0,60,60)-->
+					<!--.pattern(0,0,60,60);-->
+			<!--var path = paper.path("M0,0 h100 v100 h-100 z").attr("fill", pattern);-->
+
+		<!--</script>-->
         <div class="footer">
-			Copyright &copy; 2015 Cortlandt Winters.
+			MIT Copyright &copy; 2015 Cortlandt Winters.
 		</div>
 	</div>
-
     <script src="common.js"></script>
 	<script src="bundle.js"></script>
 	<script src="example.js"></script>
